@@ -1,6 +1,4 @@
 
-
-
 @media only screen and (min-device-width: 1200px) {
   body {
     font-size: 1em;
@@ -21,13 +19,13 @@
     max-width: 100%;
     min-width: 100%;
     position: relative;
-    margin: 0.85em;
+    margin: 0.75em;
 
   }
 
   .widget-container {
-    width: 100%;
-    height: auto;
+    width: 95%;
+
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
@@ -49,18 +47,21 @@
 
   .items {
     border-top: 2px solid gray;
-    width: 100%;
-    display: block;
+    width: 90% !important;
+    margin: 0.2em;
+    display: inline-flex;
+    flex-direction: column;
     position: relative;
+
   }
 
   .item-wrapper {
     /* width: calc(100%/3 - 5px); */
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
+    width: 85% !important;
+    min-width: 85% !important;
+    max-width: 85% !important;
     /* max-width: 350px; */
-    margin: 5px;
+    margin: 0.2em !important;
     cursor: pointer;
     flex: 1 1 auto;
     position: relative;
@@ -70,6 +71,10 @@
 
   .item-container {
     width: 90%;
+  }
+
+  .image-wrapper {
+    width: 90% !important;
   }
 
 
