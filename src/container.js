@@ -23,7 +23,7 @@ class Container {
     return this.allItems.map((item) =>{
       let itemDiv = new Item(item)
       return itemDiv.render()
-    })
+    }).join("")
   }
 
   render() {
