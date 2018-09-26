@@ -9,7 +9,6 @@ const url = "https://api.taboola.com/1.2/json/apitestaccount/recommendations.get
 
 class Widget {
   constructor(apiUrl) {
-
     this.apiUrl = apiUrl
     this.recommendations = []
 
@@ -43,7 +42,7 @@ class Widget {
 
 document.addEventListener('DOMContentLoaded',  () => {
 
-  const recs = new Widget(url)
-  recs.init()
+  const widget = new Widget(url)
+  widget.init()
 
 })

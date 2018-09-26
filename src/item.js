@@ -1,11 +1,9 @@
 class Item {
+
   constructor(item) {
     Object.keys(item).forEach((k) => {
-
       return this[k] = item[k]
-
     })
-
   }
 
   render() {
