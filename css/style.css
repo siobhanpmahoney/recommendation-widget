@@ -1,4 +1,15 @@
 
+body {
+  font-size: 1em;
+  width: 100%;
+  max-width: 780px;
+  min-width: 580px;
+  position: relative;
+  overflow-y: auto;
+  margin: 20px;
+
+}
+
 @media only screen and (max-width : 480px) {
   .widget-container {
     width: calc(100% - 10px);
@@ -79,14 +90,14 @@ margin-top: 5px;
 /* @media only screen and (min-width: 800px) { */
 
 .widget-container {
-  width: 60%;
-  max-width: 650px;
-  min-width: 400px;
+  /* width: 60%;
+  max-width: 600px;
+  min-width: 500px; */
   height: auto;
+  width: 90%;
   margin-top: 10%;
   display: block;
   position: relative;
-  overflow-y: scroll;
 
 }
 
@@ -101,13 +112,14 @@ margin-top: 5px;
 }
 
 .item-wrapper {
-  width: calc(100%/3 - 40px);
-  min-width: 150px;
-  max-width: 245px;
+  /* width: calc(100%/3 - 5px); */
+  width: 31%;
+  min-width: 180px;
+  max-width: 235px;
   /* max-width: 350px; */
-  margin: 20px;
+  margin: 5px;
   cursor: pointer;
-  flex: 1 1 30%;
+  flex: 0 1 auto;
   position: relative;
   display: inline-flex;
   flex-flow: column wrap;
@@ -116,7 +128,7 @@ margin-top: 5px;
 }
 
 .item-container {
-  flex: 0 1 10%;
+  flex: 1 1 auto;
 }
 
 .item-container > .image-wrapper {
@@ -130,9 +142,13 @@ margin-top: 5px;
   display: block;
 }
 
+.item-title-wrapper {
+  font-size: 75%;
+}
+
 
 .item-bottom-branding {
-  font-size: 75%;
+  font-size: 50%;
   font-weight: bold;
   color: gray;
 
