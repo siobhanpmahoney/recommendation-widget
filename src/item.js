@@ -10,12 +10,14 @@ class Item {
 
   render() {
     return (
-      `<div class='item-wrapper'>
-        <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
+      `<div class="item-wrapper">
+      <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
 
 
           <div class='image-wrapper'>
-            <a href='${this.thumbnail[0].url}'><image src='${this.thumbnail[0].url}' class="thumbnail"/></a>
+
+            <image src='${this.thumbnail[0].url}' class="thumbnail"/>
+
           </div>
 
           <div class='item-title-wrapper'>
@@ -26,8 +28,8 @@ class Item {
             ${this.branding}
           </div>
 
-        </div>
-      </div>`
+
+      </div></div>`
     )
   }
 }
