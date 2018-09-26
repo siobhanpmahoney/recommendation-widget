@@ -11,6 +11,7 @@ body {
 }
 
 
+
 #widget-container {
   width: 100%;
   min-width: 500px;
@@ -19,8 +20,28 @@ body {
   justify-content: stretch;
   flex-wrap: nowrap;
   flex-direction: row;
+  box-sizing: border-box;
 
 
+}
+
+#container-header {
+  display: inline-flex;
+  flex-flow: row-reverse nowrap;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+#header-left {
+  float: left;
+  align-self: flex-start;
+}
+
+#header-right {
+  float: right;
+  align-self: flex-end;
+  /* white-space: pre-wrap; */
 }
 
 

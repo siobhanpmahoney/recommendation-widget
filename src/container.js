@@ -13,8 +13,19 @@ class Container {
   render() {
 
     return (
-      `<div class="items">
-      ${this.renderItems()}
+`      <div class="items">
+        <div id="container-header">
+          <a id="header-right" href='https://popup.taboola.com/en/'>
+          Sponsored Links By Taboola<img src='http://popup.taboola.com/images/adchoice-logo.jpg' height='13px'/>
+          </a>
+          <span id="header-left">
+            From Around the Web
+          </span>
+        </div>
+
+
+
+        ${this.renderItems()}
       </div>`
     )
   }

@@ -15,7 +15,7 @@ class Item {
 
           <div class='image-wrapper'>
 
-            <image src='${this.thumbnail[0].url}' class="thumbnail"/>
+            <a href='${this.url}'><image src='${this.thumbnail[0].url}' class="thumbnail"/></a>
 
           </div>
 
