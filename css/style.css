@@ -1,8 +1,8 @@
 
 body {
   font-size: 1em;
-  width: 95vw;
 
+  display: block;
   position: relative;
   height: auto;
   overflow-y: scroll;
@@ -14,7 +14,7 @@ body {
 
 #widget-container {
   width: 100%;
-  min-width: 500px;
+
   flex: 1 1 auto;
   display: flex;
   justify-content: stretch;
@@ -144,8 +144,10 @@ img#image-logo {
 
 /* desktop  */
 
-@media only screen and (min-device-width: 1200px) {
--flow: column wrap;
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1)  {
+  body {
+    min-width: 500px;
+  }
 
 }
 
@@ -163,13 +165,13 @@ img#image-logo {
   and (-webkit-min-device-pixel-ratio: 1) {
 
 
-    /* .widget-container {
+    .widget-container {
       width: 95%;
 
       display: flex;
       justify-content: stretch;
       flex-wrap: nowrap;
-      flex-direction: column;
+      flex-direction: row;
     }
 
     .items {
@@ -181,8 +183,8 @@ img#image-logo {
       flex-wrap: wrap;
 
     }
-
-    .item-wrapper {
+/*
+    .item-container {
       width: 31% !important;
       min-width:31% !important;
       max-width:31% !important;
@@ -190,7 +192,7 @@ img#image-logo {
       flex: 1 1 auto;
       position: relative;
       display: inline-flex;
-      flex-flow: column wrap;
+      flex-flow: row wrap;
     } */
 
 }
