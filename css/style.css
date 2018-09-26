@@ -43,10 +43,14 @@ body {
 }
 
 
-.image-wrapper {
-
-  width: 100%;
+.image-wrapper, .item-title-wrapper {
+  width: 95%;
   display: block;
+}
+
+.item-title-wrapper {
+  height: 72px;
+  position: relative;
 }
 
 .thumbnail {
@@ -161,9 +165,7 @@ body {
   .item-container {
     /* width: calc(100%/3 - 5px); */
     width: 100%;
-
     /* max-width: 350px; */
-    margin: 0.2em !important;
     cursor: pointer;
     flex: 1 1 auto;
     position: relative;
