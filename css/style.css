@@ -102,16 +102,15 @@ margin-top: 5px;
 
 .item-wrapper {
   width: calc(100%/3 - 40px);
-  min-width: 100px;
-  max-width: 275px;
+  min-width: 150px;
+  max-width: 245px;
   /* max-width: 350px; */
   margin: 20px;
   cursor: pointer;
   flex: 1 1 30%;
-  float: left;
   position: relative;
   display: inline-flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 
 
 }
