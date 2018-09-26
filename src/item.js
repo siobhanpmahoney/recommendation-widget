@@ -20,7 +20,7 @@ class Item {
           </div>
 
           <div class='item-title-wrapper'>
-            ${this.name}
+            <a href='${this.url}'>${this.name}</a>
           </div>
 
           <div class='item-bottom-branding'>

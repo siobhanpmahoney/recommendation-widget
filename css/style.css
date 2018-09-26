@@ -30,19 +30,43 @@ body {
   flex-flow: row-reverse nowrap;
   width: 100%;
   justify-content: space-between;
+  margin: 0 2% 1% 2%;
 
 }
 
 #header-left {
   float: left;
   align-self: flex-start;
+  display: inline;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+
 }
 
 #header-right {
   float: right;
   align-self: flex-end;
+  display: inline;
+  font-size: 12px;
   /* white-space: pre-wrap; */
 }
+
+a {
+  text-decoration:none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img#image-logo {
+   margin: 0em 0.2em -0.2em 0.2em;
+}
+
 
 
 
