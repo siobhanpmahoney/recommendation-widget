@@ -22,12 +22,11 @@ class Widget {
     .then(() => this.renderWidget())
   }
 
-  renderWidget() {
 
+  renderWidget() {
     const listDiv = document.getElementById("widget-container");
-    const widget = this.createContainer()
-    console.log("widge", widget)
-    listDiv.innerHTML = widget.render()
+    const container = new Container(this.recommendations)
+    listDiv.innerHTML = container.render()
   }
 
   createContainer() {
