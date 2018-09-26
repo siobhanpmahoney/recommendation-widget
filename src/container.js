@@ -22,16 +22,16 @@ class Container {
 
     return this.allItems.map((item) =>{
       let itemDiv = new Item(item)
-      itemDiv.render()
-    }).join("")
+      return itemDiv.render()
+    })
   }
 
   render() {
-    console.log(this.renderItems())
+
     return (
       `<div>
       <span>hi</span>
-      <ul>
+      <ul class="items">
       ${this.renderItems()}
       </ul>
       </div>`
