@@ -9,7 +9,6 @@ class Item {
   }
 
   render() {
-
     return (
       `<li>${this.name}</li>`
     )
