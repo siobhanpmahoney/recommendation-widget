@@ -7,7 +7,6 @@ class Item {
   }
 
   render() {
-    console.log("in item")
     return (
       `
       <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
@@ -15,15 +14,15 @@ class Item {
 
           <div class='image-wrapper'>
 
-            <a href='${this.url}'><image src='${this.thumbnail[0].url}' class="thumbnail"/></a>
+            <a href='${this.url}' target='_blank'><image src='${this.thumbnail[0].url}' class="thumbnail"/></a>
 
           </div>
 
           <div class='item-title-wrapper'>
-            <a href='${this.url}'>${this.name}</a>
+            <a href='${this.url}' target='_blank'>${this.name}</a>
           </div>
 
-          <a href='${this.url}'>
+          <a href='${this.url}' target='_blank'>
           <div class='item-bottom-branding'>
             <span class="category">${this.categories ? (
                `${this.categories[0]} | `
