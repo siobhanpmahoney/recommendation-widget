@@ -1,20 +1,16 @@
 
 body {
   font-size: 1em;
-
   display: block;
   position: relative;
   height: auto;
   overflow-y: scroll;
-
-
 }
 
 
 
 #widget-container {
   width: 100%;
-
   flex: 1 1 auto;
   display: flex;
   justify-content: stretch;
@@ -44,7 +40,6 @@ body {
   text-align: left;
   position: relative;
   text-transform: uppercase;
-
 }
 
 #header-right {
@@ -52,7 +47,6 @@ body {
   align-self: flex-end;
   display: inline;
   font-size: 12px;
-  /* white-space: pre-wrap; */
 }
 
 a {
@@ -69,19 +63,16 @@ img#image-logo {
 }
 
 
-
-
 .items {
-
   display: flex;
   flex-flow: row wrap;
+  margin: 0 0 2% 2%;
 
 
 }
 
 .item-container {
   width: 31%;
-
   flex: 1 1 auto;
   position: relative;
   display: inline-block;
@@ -92,7 +83,7 @@ img#image-logo {
 
 
 .image-wrapper, .item-title-wrapper {
-  width: 95%;
+  /* width: 95%; */
 
 }
 
@@ -113,8 +104,6 @@ img#image-logo {
   -webkit-line-clamp:3;
   text-overflow: ellipsis;
   margin-bottom: 0.1em;
-
-
 }
 
 .item-bottom-branding {
@@ -164,10 +153,8 @@ img#image-logo {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-
     .widget-container {
       width: 95%;
-
       display: flex;
       justify-content: stretch;
       flex-wrap: nowrap;
@@ -183,17 +170,7 @@ img#image-logo {
       flex-wrap: wrap;
 
     }
-/*
-    .item-container {
-      width: 31% !important;
-      min-width:31% !important;
-      max-width:31% !important;
-      margin: 0.2em !important;
-      flex: 1 1 auto;
-      position: relative;
-      display: inline-flex;
-      flex-flow: row wrap;
-    } */
+
 
 }
 
@@ -230,7 +207,7 @@ img#image-logo {
 
   .items {
     border-top: 2px solid gray;
-    width: 100% !important;
+    width: 95% !important;
     margin: 0.2em;
     display: inline-flex;
     flex-direction: column;
@@ -240,7 +217,7 @@ img#image-logo {
 
   .item-container {
     /* width: calc(100%/3 - 5px); */
-    width: 100%;
+    width: 95%;
     /* max-width: 350px; */
     cursor: pointer;
     flex: 1 1 auto;
@@ -252,7 +229,7 @@ img#image-logo {
 
 
   .image-wrapper {
-    width: 90% !important;
+    width: 95% !important;
   }
 
 
