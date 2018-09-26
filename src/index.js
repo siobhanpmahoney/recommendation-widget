@@ -28,14 +28,6 @@ class Widget {
     listDiv.innerHTML = container.render()
   }
 
-  createContainer() {
-    return new Container(this.recommendations)
-  }
-
-
-
-
-
 }
 
 

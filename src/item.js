@@ -7,6 +7,7 @@ class Item {
   }
 
   render() {
+    console.log("in item")
     return (
       `
       <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
