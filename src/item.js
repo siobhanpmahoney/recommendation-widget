@@ -23,16 +23,18 @@ class Item {
             <a href='${this.url}'>${this.name}</a>
           </div>
 
+          <a href='${this.url}'>
           <div class='item-bottom-branding'>
-            ${this.categories ? (
+            <span class="category">${this.categories ? (
                `${this.categories[0]} | `
              )
                : (
                  ""
                )
-             }
+             }</span>
                ${this.branding}
           </div>
+          </a>
 
 
       </div>`

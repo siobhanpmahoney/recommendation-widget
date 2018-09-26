@@ -43,6 +43,7 @@ body {
   font-weight: 700;
   text-align: left;
   position: relative;
+  text-transform: uppercase;
 
 }
 
@@ -134,7 +135,10 @@ img#image-logo {
 .item-bottom-branding {
   font-weight: bold;
   color: gray;
+}
 
+.category{
+  text-transform: capitalize;
 }
 
 
