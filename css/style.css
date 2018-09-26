@@ -2,7 +2,7 @@
 body {
   font-size: 1em;
   width: 95vw;
-  max-height: 100%;
+
   position: relative;
   height: auto;
   overflow-y: scroll;
@@ -139,7 +139,7 @@ body {
 
   }
 
-  .widget-container {
+  #widget-container {
     width: 90%;
 
     display: flex;
@@ -158,11 +158,10 @@ body {
 
   }
 
-  .item-wrapper {
+  .item-container {
     /* width: calc(100%/3 - 5px); */
-    width: 95% !important;
-    min-width: 95% !important;
-    max-width: 95% !important;
+    width: 100%;
+
     /* max-width: 350px; */
     margin: 0.2em !important;
     cursor: pointer;
@@ -172,9 +171,7 @@ body {
     flex-flow: column wrap;
   }
 
-  .item-container {
-    width: 90%;
-  }
+
 
   .image-wrapper {
     width: 90% !important;
