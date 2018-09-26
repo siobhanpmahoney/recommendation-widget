@@ -29,11 +29,8 @@ class Container {
   render() {
 
     return (
-      `<div>
-      <span>hi</span>
-      <ul class="items">
+      `<div class="items">
       ${this.renderItems()}
-      </ul>
       </div>`
     )
   }

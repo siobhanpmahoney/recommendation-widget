@@ -10,23 +10,24 @@ class Item {
 
   render() {
     return (
-      `<li>${this.name}</li>`
+      `<div class='item-wrapper'>
+        <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
+
+
+          <div class='image-wrapper'>
+            <a href='${this.thumbnail[0].url}'><image src='${this.thumbnail[0].url}' class="thumbnail"/></a>
+          </div>
+
+          <div class='item-title-wrapper'>
+            ${this.name}
+          </div>
+
+          <div class='item-bottom-branding'>
+            ${this.branding}
+          </div>
+
+        </div>
+      </div>`
     )
   }
 }
-
-
-// <div data-id=${this.id} data-item-title=${this.name}>
-//   <a title=${this.name} href=${this.url} target = "_blank" class="item-thumbnail-href">
-//     <div class = "thumbBlock_holder">
-//         <span class = "thumbnail-overlay">
-//
-//         </span>
-//
-//         <span class = "branding">
-//           ${this.name}
-//         </span>
-//
-//     </div>
-//   </a>
-// </div>
