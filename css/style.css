@@ -117,7 +117,8 @@ img#image-logo {
 }
 
 .item-bottom-branding {
-  font-size: 0.75em;
+  line-height: 24px;
+  font-size: 12px;
   font-weight: 700;
   color: #999;
 }

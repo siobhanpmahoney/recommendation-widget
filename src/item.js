@@ -24,7 +24,14 @@ class Item {
           </div>
 
           <div class='item-bottom-branding'>
-            ${this.branding}
+            ${this.categories ? (
+               `${this.categories[0]} | `
+             )
+               : (
+                 ""
+               )
+             }
+               ${this.branding}
           </div>
 
 
