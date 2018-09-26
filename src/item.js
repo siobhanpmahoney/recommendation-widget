@@ -8,7 +8,7 @@ class Item {
 
   render() {
     return (
-      `<div class="item-wrapper">
+      `
       <div data-id=${this.id} data-item-title='${this.name}' class='item-container'>
 
 
@@ -27,7 +27,7 @@ class Item {
           </div>
 
 
-      </div></div>`
+      </div>`
     )
   }
 }
